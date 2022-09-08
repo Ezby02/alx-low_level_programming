@@ -1,5 +1,9 @@
 #include <stdio.h>
-/*Entry point (main function)*/
+/**
+*Entry point (main function)
+*
+*Return is 0
+*/
 int main(void)
 {
 	/*Use of puts*/
