@@ -12,13 +12,13 @@ int main(void)
 	print_alphabet();
 	return (0);
 }
-int prunt_alphabet(void)
+int print_alphabet(void)
 {
 	int letter;
 	
 	for (letter = 'a'; letter <= 'z'; letter++)
-		_putchar(letter);
+		putchar(letter);
 	
-	_putchar("\n");
+	putchar("\n");
 	return (void);
 }
