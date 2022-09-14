@@ -5,7 +5,7 @@
  *
  *@c: char type letter
  *
- *Return: returns 0 if c is a letter whether lowercase or uppercase and 1 if otherwise
+ *Return: returns 0 if c is an alphabet and 1 if otherwise
  */
 int _isalpha(int c)
 {
