@@ -1,28 +1,17 @@
 #include "main.h"
 
 /**
- * largest_number - returns the largest of three numbers
- * @a: first integer
- * @b: second integer
- * @c: third integer
- * Return: largest number
+ * mul - function that multiplies two integers
+ *
+ * @a: an integer  type
+ * @b: an integer integer
+ *
+ * Return: return 0 on success and 1 on fail
  */
 
-int largest_number(int a, int b, int c)
+int mul(int a, int b)
 {
-	int largest;
+	int m = a * b;
 
-	if (a >= b && a >= c)
-	{
-		largest = a;
-	}
-	else if (b >= a && b >= c)
-	{
-		largest = b;
-	}
-	else
-	{
-		largest = c;
-	}
-	return (largest);
+	return (m);
 }
