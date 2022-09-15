@@ -2,29 +2,33 @@
 
 /**
  * print_diagonal - Print diagonal if number is positive
- * @n: the character to be count
+ *
+ * @n: character to be count
  *
  * Return: To the value of c
  */
- 
- void print_diagonal(int n)
+
+void print_diagonal(int n)
 {
-	int len, space;
-
-	if (n > 0)
+	int i;
+	int j;
+	if (n <= 0)
 	{
-		for (len = 0; len < n; len++)
+		_putchar('\n');
+	}
+	else
+	{
+		_putchar('\\');
+		_putchar('\n');
+		for (i = 0; i < (n - 1); i++)
 		{
-			for (space = 0; space < len; space++)
+			for (j = i; j >= 0; j--)
+			{
 				_putchar(' ');
+			}
 			_putchar('\\');
-
-			if (len == n - 1)
-				continue;
-
 			_putchar('\n');
 		}
 	}
-
-	_putchar('\n');
 }
+			
