@@ -7,26 +7,21 @@
  *
  * Return: pointer to the array, or NULL if it fails
  */
-char *_strdup(char *str)
+char *create_array(unsigned int size, char c)
 {
-	char *duplicate;
-	int index, len = 0;
+	unsigned int i;
+	char *a;
 
-	if (str == NULL)
+	if (size == 0)
 		return (NULL);
-
-	for (index = 0; str[index]; index++)
-		len++;
-
-	duplicate = malloc(sizeof(char) * (len + 1));
-
-	if (duplicate == NULL)
+	a = malloc(size * sizeof(char));
+	if (a == NULL)
+	{
 		return (NULL);
-
-	for (index = 0; str[index]; index++)
-		duplicate[index] = str[index];
-
-	duplicate[len] = '\0';
-
-	return (duplicate);
+	}
+	for (i = 0; i < size; i++)
+	{
+		a[i] = c;
+	}
+	return (a);
 }
