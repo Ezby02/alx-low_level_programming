@@ -18,7 +18,3 @@ size_t print_listint(const listint_t *h)
 	}
 	return (count);
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
